@@ -9,8 +9,8 @@ import ErrorBoundary from "./components/ErrorBoundary";
 
 const queryClient = new QueryClient();
 
-// Use HashRouter for GitHub Pages compatibility
-const Router = process.env.NODE_ENV === 'production' ? HashRouter : BrowserRouter;
+// Use BrowserRouter for custom domain
+const Router = BrowserRouter;
 
 // Add debugging
 console.log('App loading...', { 
