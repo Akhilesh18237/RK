@@ -14,12 +14,16 @@ const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    console.log('Index component mounted');
     const timer = setTimeout(() => {
+      console.log('Loading screen timeout completed');
       setIsLoading(false);
-    }, 2500);
+    }, 1000); // Reduced from 2.5s to 1s
 
     return () => clearTimeout(timer);
   }, []);
+
+  console.log('Index rendering, isLoading:', isLoading);
 
   if (isLoading) {
     return <LoadingScreen />;
@@ -27,7 +31,7 @@ const Index = () => {
 
   return (
     <LanguageProvider>
-      <div className="min-h-screen w-full gpu-accelerated">
+      <div className="min-h-screen w-full">
         <ScrollAnimations />
         <Navigation />
         <main className="w-full">

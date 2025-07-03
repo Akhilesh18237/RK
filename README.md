@@ -35,8 +35,8 @@ Visit: [https://rkmetal.shop](https://rkmetal.shop)
 
 1. Clone the repository
 ```bash
-git clone https://github.com/Akhilesh18237/RK-Metal.git
-cd RK-Metal
+git clone https://github.com/Akhilesh18237/RK.git
+cd RK
 ```
 
 2. Install dependencies
