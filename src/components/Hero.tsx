@@ -1,11 +1,12 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { ArrowRight, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Hero = () => {
   const { t } = useLanguage();
+  const [imageError, setImageError] = useState(false);
 
   const handlePhoneClick = () => {
     window.open('tel:+918319066874', '_self');
@@ -84,11 +85,21 @@ const Hero = () => {
           {/* Right Content - Hero Image */}
           <div className="relative mt-8 lg:mt-0">
             <div className="relative transform hover:scale-105 transition-transform duration-500">
-              <img 
-                src="/lovable-uploads/587fb62d-9f0f-4d7d-842b-ec859b5498a3.png" 
-                alt="Rama Krishna Metal Products" 
-                className="w-full h-auto rounded-2xl shadow-2xl"
-              />
+              {!imageError ? (
+                <img 
+                  src="/lovable-uploads/587fb62d-9f0f-4d7d-842b-ec859b5498a3.png" 
+                  alt="Rama Krishna Metal Products" 
+                  className="w-full h-auto rounded-2xl shadow-2xl"
+                  onError={() => setImageError(true)}
+                />
+              ) : (
+                <div className="w-full h-64 bg-gradient-to-br from-blue-100 to-orange-100 rounded-2xl shadow-2xl flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="text-6xl font-bold text-blue-600 mb-2">RK</div>
+                    <div className="text-gray-600 font-medium">Rama Krishna Metal</div>
+                  </div>
+                </div>
+              )}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-blue-900/20 to-transparent"></div>
             </div>
             
