@@ -1,70 +1,86 @@
-# RK Metal - Official Website
+# RK Metal - Metal Manufacturing Company Website
 
-## About
+A modern, responsive website for RK Metal, a metal manufacturing company. Built with React, TypeScript, Vite, and Tailwind CSS.
 
-RK Metal is a leading metal manufacturing and trading company. This is the official website showcasing our products, services, and company information.
+## 🚀 Live Website
 
-**Live Website**: https://rkmetal.shop
+Visit: [https://rkmetal.shop](https://rkmetal.shop)
 
-## Technologies Used
+## 🛠️ Tech Stack
 
-This project is built with modern web technologies:
+- **Frontend Framework**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS with shadcn/ui components
+- **Routing**: React Router DOM
+- **Deployment**: GitHub Pages with custom domain
 
-- **React 18** - Frontend framework
-- **TypeScript** - Type-safe JavaScript
-- **Vite** - Fast build tool and dev server
-- **Tailwind CSS** - Utility-first CSS framework
-- **shadcn/ui** - Beautiful UI components
-- **React Router** - Client-side routing
-- **Framer Motion** - Smooth animations
+## 📦 Features
 
-## Local Development
+- Responsive design for all devices
+- Modern UI with smooth animations
+- Product showcase with grid layout
+- Contact form with validation
+- Multi-language support
+- SEO optimized
+- Fast loading times
 
-To run this project locally:
+## 🚀 Getting Started
 
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
 ```bash
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
+git clone https://github.com/Akhilesh18237/RK-Metal.git
+cd RK-Metal
 ```
 
-The development server will start at `http://localhost:8081`
+2. Install dependencies
+```bash
+npm install
+```
 
-## Deployment
+3. Start development server
+```bash
+npm run dev
+```
 
-This website is automatically deployed to GitHub Pages using GitHub Actions. The deployment process:
+4. Build for production
+```bash
+npm run build
+```
 
-1. Builds the project using `npm run build`
-2. Deploys to GitHub Pages
-3. Uses custom domain `rkmetal.shop`
-
-## Project Structure
+## 📁 Project Structure
 
 ```
 src/
-├── components/     # Reusable UI components
-├── pages/         # Page components
-├── contexts/      # React contexts
-├── hooks/         # Custom React hooks
-├── lib/           # Utility functions
-└── ui/            # shadcn/ui components
+├── components/          # React components
+│   ├── ui/             # shadcn/ui components
+│   └── ...             # Custom components
+├── contexts/           # React contexts
+├── hooks/              # Custom hooks
+├── lib/                # Utility functions
+├── pages/              # Page components
+└── main.tsx           # App entry point
 ```
 
-## Contributing
+## 🌐 Deployment
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
+This website is automatically deployed to GitHub Pages using GitHub Actions. The deployment workflow:
 
-## License
+1. Triggers on push to main branch
+2. Builds the project using Vite
+3. Deploys to GitHub Pages
+4. Uses custom domain: rkmetal.shop
 
-This project is proprietary to RK Metal.
+## 📝 License
+
+This project is private and proprietary to RK Metal.
+
+## 🤝 Contributing
+
+This is a private project. For any issues or questions, please contact the development team.

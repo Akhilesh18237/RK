@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: '/',
+  base: process.env.NODE_ENV === 'production' ? '/RK-Metal/' : '/',
   plugins: [
     react(),
     mode === 'development' &&
