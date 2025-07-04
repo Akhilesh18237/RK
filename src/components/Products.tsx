@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ProductsHeader from './ProductsHeader';
 import ProductGrid from './ProductGrid';
@@ -17,10 +16,10 @@ const Products = () => {
       image: '/lovable-uploads/0590b300-7102-4d44-9c29-35fe62cfa3d3.png',
       category: 'Transformers'
     },
-    // 3rd - Distribution Transformers
+    // 3rd - Distribution Transformers (image updated)
     {
       titleKey: 'transformer',
-      image: '/lovable-uploads/35701cbb-7401-42fd-9d80-e3a1534ae38c.png',
+      image: '/lovable-uploads/047727b6-cdf0-4633-84f1-f2ef0db9f939.png',
       category: 'Transformers'
     },
     // 4th - Conductor Wire
