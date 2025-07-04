@@ -13,13 +13,13 @@ const Products = () => {
     // 2nd - Distribution Transformer Tanks (Display: "Distribution Transformer Tanks" with spaces)
     {
       titleKey: 'distributionTransformerTanks',
-      image: '/lovable-uploads/0590b300-7102-4d44-9c29-35fe62cfa3d3.png',
+      image: '/lovable-uploads/1000297836-removebg-preview (1).png',
       category: 'Transformers'
     },
     // 3rd - Distribution Transformers (image updated)
     {
       titleKey: 'transformer',
-      image: '/lovable-uploads/047727b6-cdf0-4633-84f1-f2ef0db9f939.png',
+      image: '/lovable-uploads/0590b300-7102-4d44-9c29-35fe62cfa3d3.png',
       category: 'Transformers'
     },
     // 4th - Conductor Wire
