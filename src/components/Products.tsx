@@ -13,7 +13,7 @@ const Products = () => {
     // 2nd - Distribution Transformer Tanks (Display: "Distribution Transformer Tanks" with spaces)
     {
       titleKey: 'distributionTransformerTanks',
-      image: '/lovable-uploads/1000297836-removebg-preview (1).png',
+      image: '/lovable-uploads/1000297836-removebg-preview%20(1).png',
       category: 'Transformers'
     },
     // 3rd - Distribution Transformers (image updated)
