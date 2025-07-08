@@ -229,7 +229,25 @@ const translations = {
     industryStandards: 'Meets industry standards',
     reliablePerformance: 'Reliable performance guaranteed',
     quickDelivery: 'Quick delivery service',
-    technicalSupport: '24/7 technical support'
+    technicalSupport: '24/7 technical support',
+
+    // New Products
+    robustFuse: 'Robust Fuse',
+    robustFuseDesc: 'Heavy-duty robust fuse designed for high reliability and safety in electrical systems.',
+    coreChannel: 'Core Channel',
+    coreChannelDesc: 'Precision-engineered core channel for structural and electrical applications.',
+    dropOutFuseSet: 'Drop Out Fuse Set',
+    dropOutFuseSetDesc: 'Drop out fuse set for effective circuit protection and easy maintenance.',
+    // Features and Specs for new products
+    robustFuseFeatures: ['robustConstruction', 'highTensileStrength', 'easyInstallation', 'qualityCertified', 'longLasting'],
+    robustFuseSpecs: ['highVoltageRating', 'mildSteelConstruction', 'paintFinish', 'testPressure', 'customizable'],
+    coreChannelFeatures: ['precisionEngineered', 'corrosionResistant', 'easyInstallation', 'customizable', 'industryStandards'],
+    coreChannelSpecs: ['mildSteelConstruction', 'variousLengths', 'paintFinish', 'testCertificate', 'customSolutions'],
+    dropOutFuseSetFeatures: ['reliablePerformance', 'easyMaintenance', 'quickDelivery', 'industryStandards', 'isoCertified'],
+    dropOutFuseSetSpecs: ['highVoltageRating', 'zincCoating', 'testPressure', 'variousSizes', 'standardCompliant'],
+
+    // Section titles
+    specialFusesChannels: 'Special Fuses & Channels'
   },
   hi: {
     // Navigation
@@ -451,7 +469,25 @@ const translations = {
     industryStandards: 'उद्योग मानकों को पूरा करता है',
     reliablePerformance: 'विश्वसनीय प्रदर्शन की गारंटी',
     quickDelivery: 'त्वरित डिलीवरी सेवा',
-    technicalSupport: '24/7 तकनीकी सहायता'
+    technicalSupport: '24/7 तकनीकी सहायता',
+
+    // New Products
+    robustFuse: 'रॉबस्ट फ्यूज',
+    robustFuseDesc: 'उच्च विश्वसनीयता और सुरक्षा के लिए डिज़ाइन किया गया हेवी-ड्यूटी रॉबस्ट फ्यूज।',
+    coreChannel: 'कोर चैनल',
+    coreChannelDesc: 'संरचनात्मक और विद्युत अनुप्रयोगों के लिए सटीक इंजीनियर्ड कोर चैनल।',
+    dropOutFuseSet: 'ड्रॉप आउट फ्यूज सेट',
+    dropOutFuseSetDesc: 'प्रभावी सर्किट सुरक्षा और आसान रखरखाव के लिए ड्रॉप आउट फ्यूज सेट।',
+    // Features and Specs for new products
+    robustFuseFeatures: ['robustConstruction', 'highTensileStrength', 'easyInstallation', 'qualityCertified', 'longLasting'],
+    robustFuseSpecs: ['highVoltageRating', 'mildSteelConstruction', 'paintFinish', 'testPressure', 'customizable'],
+    coreChannelFeatures: ['precisionEngineered', 'corrosionResistant', 'easyInstallation', 'customizable', 'industryStandards'],
+    coreChannelSpecs: ['mildSteelConstruction', 'variousLengths', 'paintFinish', 'testCertificate', 'customSolutions'],
+    dropOutFuseSetFeatures: ['reliablePerformance', 'easyMaintenance', 'quickDelivery', 'industryStandards', 'isoCertified'],
+    dropOutFuseSetSpecs: ['highVoltageRating', 'zincCoating', 'testPressure', 'variousSizes', 'standardCompliant'],
+
+    // Section titles
+    specialFusesChannels: 'विशेष फ्यूज और चैनल'
   }
 };
 

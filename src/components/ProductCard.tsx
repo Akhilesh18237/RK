@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -37,10 +36,14 @@ const ProductCard = ({ product, index, isVisible }: ProductCardProps) => {
       'copperSuperDPCWire': ['superiorConductivity', 'antiCorrosion', 'highTensileStrength', 'premiumQuality', 'longDurable'],
       'allTypesCablesLugs': ['precisionEngineered', 'multiSizeCompatible', 'easyConnection', 'reliableContact', 'industrialStandard'],
       'conductorWire': ['highPurity', 'flexibleStranding', 'temperatureResistant', 'optimalPerformance', 'standardCompliant'],
-      'giWire': ['galvanizedCoating', 'rustProof', 'highTensileStrength', 'uniformThickness', 'longLasting']
+      'giWire': ['galvanizedCoating', 'rustProof', 'highTensileStrength', 'uniformThickness', 'longLasting'],
+      'robustFuse': t('robustFuseFeatures'),
+      'coreChannel': t('coreChannelFeatures'),
+      'dropOutFuseSet': t('dropOutFuseSetFeatures')
     };
-    
-    return featureMap[titleKey] || ['highQualityMaterials', 'industryStandards', 'reliablePerformance', 'quickDelivery', 'technicalSupport'];
+    if (Array.isArray(featureMap[titleKey])) return featureMap[titleKey];
+    if (typeof featureMap[titleKey] === 'string') return t(featureMap[titleKey]).split(',');
+    return ['highQualityMaterials', 'industryStandards', 'reliablePerformance', 'quickDelivery', 'technicalSupport'];
   };
 
   const getProductSpecificSpecs = (titleKey: string) => {
@@ -55,10 +58,14 @@ const ProductCard = ({ product, index, isVisible }: ProductCardProps) => {
       'copperSuperDPCWire': ['copperConductor', 'superiorInsulation', 'multiCore', 'ampacityRating', 'ieeeStandard'],
       'allTypesCablesLugs': ['aluminumCopper', 'compressionType', 'boltedDesign', 'multipleRanges', 'contactResistance'],
       'conductorWire': ['strandsConfig', 'conductorSize', 'currentRating', 'voltageGrade', 'flexibilityTest'],
-      'giWire': ['zincCoating', 'wireGauge', 'tensileTest', 'uniformCoating', 'astmStandard']
+      'giWire': ['zincCoating', 'wireGauge', 'tensileTest', 'uniformCoating', 'astmStandard'],
+      'robustFuse': t('robustFuseSpecs'),
+      'coreChannel': t('coreChannelSpecs'),
+      'dropOutFuseSet': t('dropOutFuseSetSpecs')
     };
-    
-    return specMap[titleKey] || ['variousSizes', 'customSolutions', 'wholesaleRetail', 'fastProcessing', 'qualityCertified'];
+    if (Array.isArray(specMap[titleKey])) return specMap[titleKey];
+    if (typeof specMap[titleKey] === 'string') return t(specMap[titleKey]).split(',');
+    return ['variousSizes', 'customSolutions', 'wholesaleRetail', 'fastProcessing', 'qualityCertified'];
   };
 
   const toggleExpanded = (e: React.MouseEvent) => {

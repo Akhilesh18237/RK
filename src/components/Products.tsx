@@ -1,6 +1,7 @@
 import React from 'react';
 import ProductsHeader from './ProductsHeader';
 import ProductGrid from './ProductGrid';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Products = () => {
   const products = [
@@ -13,7 +14,7 @@ const Products = () => {
     // 2nd - Distribution Transformer Tanks (Display: "Distribution Transformer Tanks" with spaces)
     {
       titleKey: 'distributionTransformerTanks',
-      image: '/lovable-uploads/WhatsApp%20Image%202025-07-04%20at%2008.49.26_1284750b.jpg',
+      image: '/lovable-uploads/furnace_natural_bg.png',
       category: 'Transformers'
     },
     // 3rd - Distribution Transformers (image updated)
@@ -73,19 +74,72 @@ const Products = () => {
   ];
 
   return (
-    <section id="products" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-24 -left-24 w-96 h-96 bg-blue-200/30 rounded-full mix-blend-multiply animate-float animation-delay-2000"></div>
-        <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-red-200/30 rounded-full mix-blend-multiply animate-float animation-delay-4000"></div>
-        <div className="absolute top-1/2 left-1/2 w-72 h-72 bg-purple-200/20 rounded-full mix-blend-multiply animate-float animation-delay-1000"></div>
-      </div>
+    <>
+      <section id="products" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute -top-24 -left-24 w-96 h-96 bg-blue-200/30 rounded-full mix-blend-multiply animate-float animation-delay-2000"></div>
+          <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-red-200/30 rounded-full mix-blend-multiply animate-float animation-delay-4000"></div>
+          <div className="absolute top-1/2 left-1/2 w-72 h-72 bg-purple-200/20 rounded-full mix-blend-multiply animate-float animation-delay-1000"></div>
+        </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <ProductsHeader />
-        <ProductGrid products={products} />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <ProductsHeader />
+          <ProductGrid products={products} />
+        </div>
+      </section>
+
+      {/* New Category Section: Special Fuses & Channels */}
+      <section id="special-fuses-channels" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-blue-50 to-red-50 relative overflow-hidden">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute -top-24 -left-24 w-96 h-96 bg-blue-200/30 rounded-full mix-blend-multiply animate-float animation-delay-2000"></div>
+          <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-red-200/30 rounded-full mix-blend-multiply animate-float animation-delay-4000"></div>
+          <div className="absolute top-1/2 left-1/2 w-72 h-72 bg-purple-200/20 rounded-full mix-blend-multiply animate-float animation-delay-1000"></div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-12 sm:mb-16 animate-fade-in-up">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 animate-slide-up">
+              {useLanguage().t('specialFusesChannels')}
+            </h2>
+            <div className="w-16 sm:w-24 h-1 bg-gradient-to-r from-blue-600 to-red-600 mx-auto mb-4 sm:mb-6 animate-scale-in animation-delay-500"></div>
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4 animate-fade-in animation-delay-1000">
+              {/* You can add a translated description here if needed */}
+            </p>
+          </div>
+          <ProductGrid products={[
+            {
+              titleKey: 'robustFuse',
+              image: '/lovable-uploads/Robust Fuse.jpg',
+              category: 'Special Fuses & Channels'
+            },
+            {
+              titleKey: 'coreChannel',
+              image: '/lovable-uploads/Core Channel.jpg',
+              category: 'Special Fuses & Channels'
+            },
+            {
+              titleKey: 'dropOutFuseSet',
+              image: '/lovable-uploads/Drop Out Fuse Set.jpg',
+              category: 'Special Fuses & Channels'
+            }
+          ]} />
+        </div>
+      </section>
+
+      {/* Add animated category image after Special Fuses & Channels */}
+      <div className="mt-12 sm:mt-16 text-center animate-fade-in-up animation-delay-2000">
+        <div className="relative group">
+          <img 
+            src="/lovable-uploads/a2240816-4403-4fb4-9571-b5a1306f5dca.png" 
+            alt="Product Categories" 
+            className="w-full max-w-4xl mx-auto rounded-xl shadow-2xl hover:scale-105 transition-transform duration-700 hover:shadow-3xl animate-float"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl"></div>
+        </div>
       </div>
-    </section>
+    </>
   );
 };
 

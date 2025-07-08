@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import ProductCard from './ProductCard';
 
@@ -33,10 +32,13 @@ const ProductGrid = ({ products }: ProductGridProps) => {
     return () => observer.disconnect();
   }, []);
 
+  const isSpecialFusesGrid = products.length === 3;
   return (
     <>
       {/* Products Grid with improved layout for expandable cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8 auto-rows-auto items-start">
+      <div className={isSpecialFusesGrid
+        ? "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 auto-rows-auto items-start justify-center"
+        : "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8 auto-rows-auto items-start"}>
         {products.map((product, index) => (
           <ProductCard
             key={`${product.titleKey}-${index}`}
@@ -45,19 +47,6 @@ const ProductGrid = ({ products }: ProductGridProps) => {
             isVisible={visibleItems.includes(index)}
           />
         ))}
-      </div>
-
-      {/* Product Categories Image */}
-      <div className="mt-12 sm:mt-16 text-center animate-fade-in-up animation-delay-2000">
-        <div className="relative group">
-          <img 
-            src="/lovable-uploads/a2240816-4403-4fb4-9571-b5a1306f5dca.png" 
-            alt="Product Categories" 
-            className="w-full max-w-4xl mx-auto rounded-xl shadow-2xl hover:scale-105 transition-transform duration-700 hover:shadow-3xl animate-float"
-            loading="lazy"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl"></div>
-        </div>
       </div>
     </>
   );
