@@ -111,17 +111,37 @@ const Products = () => {
             {
               titleKey: 'robustFuse',
               image: '/lovable-uploads/Robust Fuse.jpg',
-              category: 'Special Fuses & Channels'
+              category: 'Fuses'
             },
             {
               titleKey: 'coreChannel',
               image: '/lovable-uploads/Core Channel.jpg',
-              category: 'Special Fuses & Channels'
+              category: 'Channels'
             },
             {
               titleKey: 'dropOutFuseSet',
               image: '/lovable-uploads/Drop Out Fuse Set.jpg',
-              category: 'Special Fuses & Channels'
+              category: 'Fuses'
+            },
+            {
+              titleKey: 'pinInsulators',
+              image: '/lovable-uploads/Pin Insulators.jpg',
+              category: 'Insulators'
+            },
+            {
+              titleKey: 'hvLvBush',
+              image: '/lovable-uploads/HV & LV Bush.jpg',
+              category: 'Bushes'
+            },
+            {
+              titleKey: 'brassAluminiumMetalParts',
+              image: '/lovable-uploads/Brass & Aluminium Metal Parts.jpg',
+              category: 'Metal Parts'
+            },
+            {
+              titleKey: 'cottonTape',
+              image: '/lovable-uploads/Cotton Tape.jpg',
+              category: 'Tape'
             }
           ]} />
         </div>

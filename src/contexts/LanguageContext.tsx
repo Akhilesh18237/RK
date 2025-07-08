@@ -247,7 +247,15 @@ const translations = {
     dropOutFuseSetSpecs: ['highVoltageRating', 'zincCoating', 'testPressure', 'variousSizes', 'standardCompliant'],
 
     // Section titles
-    specialFusesChannels: 'Special Fuses & Channels'
+    specialFusesChannels: 'Special Fuses & Channels',
+    pinInsulators: 'Pin Insulators',
+    pinInsulatorsDesc: 'High-strength insulators for overhead lines. Provide reliable electrical insulation and support. Suitable for distribution networks.',
+    hvLvBush: 'HV & LV Bush',
+    hvLvBushDesc: 'Durable bushings for high and low voltage applications. Excellent insulation and mechanical strength. Used in transformers and switchgear.',
+    brassAluminiumMetalParts: 'Brass & Aluminium Metal Parts',
+    brassAluminiumMetalPartsDesc: 'Precision metal parts for electrical use. Excellent conductivity and corrosion resistance. Suitable for industrial applications.',
+    cottonTape: 'Cotton Tape',
+    cottonTapeDesc: 'High-quality tape for insulation and binding. Flexible, strong, and heat-resistant. Used in wiring and cable harnesses.'
   },
   hi: {
     // Navigation
@@ -472,12 +480,12 @@ const translations = {
     technicalSupport: '24/7 तकनीकी सहायता',
 
     // New Products
-    robustFuse: 'रॉबस्ट फ्यूज',
-    robustFuseDesc: 'उच्च विश्वसनीयता और सुरक्षा के लिए डिज़ाइन किया गया हेवी-ड्यूटी रॉबस्ट फ्यूज।',
-    coreChannel: 'कोर चैनल',
-    coreChannelDesc: 'संरचनात्मक और विद्युत अनुप्रयोगों के लिए सटीक इंजीनियर्ड कोर चैनल।',
-    dropOutFuseSet: 'ड्रॉप आउट फ्यूज सेट',
-    dropOutFuseSetDesc: 'प्रभावी सर्किट सुरक्षा और आसान रखरखाव के लिए ड्रॉप आउट फ्यूज सेट।',
+    robustFuse: 'Robust Fuse',
+    robustFuseDesc: 'Heavy-duty robust fuse designed for high reliability and safety in electrical systems.',
+    coreChannel: 'Core Channel',
+    coreChannelDesc: 'Precision-engineered core channel for structural and electrical applications.',
+    dropOutFuseSet: 'Drop Out Fuse Set',
+    dropOutFuseSetDesc: 'Drop out fuse set for effective circuit protection and easy maintenance.',
     // Features and Specs for new products
     robustFuseFeatures: ['robustConstruction', 'highTensileStrength', 'easyInstallation', 'qualityCertified', 'longLasting'],
     robustFuseSpecs: ['highVoltageRating', 'mildSteelConstruction', 'paintFinish', 'testPressure', 'customizable'],
@@ -485,6 +493,22 @@ const translations = {
     coreChannelSpecs: ['mildSteelConstruction', 'variousLengths', 'paintFinish', 'testCertificate', 'customSolutions'],
     dropOutFuseSetFeatures: ['reliablePerformance', 'easyMaintenance', 'quickDelivery', 'industryStandards', 'isoCertified'],
     dropOutFuseSetSpecs: ['highVoltageRating', 'zincCoating', 'testPressure', 'variousSizes', 'standardCompliant'],
+
+    // Special Fuses & Channels concise product descriptions (3 lines each) - Hindi
+    robustFuse: 'रॉबस्ट फ्यूज',
+    robustFuseDesc: 'उच्च विश्वसनीयता के लिए हेवी-ड्यूटी फ्यूज। मांग वाले हालात में सर्किट सुरक्षा सुनिश्चित करता है। औद्योगिक और यूटिलिटी उपयोग के लिए उपयुक्त।',
+    coreChannel: 'कोर चैनल',
+    coreChannelDesc: 'संरचनात्मक समर्थन के लिए सटीक इंजीनियर्ड चैनल। जंग-रोधी और टिकाऊ। विद्युत और निर्माण परियोजनाओं में उपयोग होता है।',
+    dropOutFuseSet: 'ड्रॉप आउट फ्यूज सेट',
+    dropOutFuseSetDesc: 'ओवरहेड लाइनों के लिए प्रभावी सर्किट सुरक्षा। आसान रखरखाव और त्वरित प्रतिस्थापन। पावर डिस्ट्रीब्यूशन में व्यापक उपयोग।',
+    pinInsulators: 'पिन इंसुलेटर',
+    pinInsulatorsDesc: 'ओवरहेड लाइनों के लिए उच्च शक्ति इंसुलेटर। विश्वसनीय विद्युत इन्सुलेशन और समर्थन प्रदान करते हैं। वितरण नेटवर्क के लिए उपयुक्त।',
+    hvLvBush: 'एचवी और एलवी बुश',
+    hvLvBushDesc: 'हाई और लो वोल्टेज के लिए टिकाऊ बुशिंग। उत्कृष्ट इन्सुलेशन और यांत्रिक मजबूती। ट्रांसफार्मर और स्विचगियर में उपयोग होता है।',
+    brassAluminiumMetalParts: 'पीतल और एल्युमिनियम धातु पार्ट्स',
+    brassAluminiumMetalPartsDesc: 'विद्युत उपयोग के लिए सटीक धातु पार्ट्स। उत्कृष्ट चालकता और जंग प्रतिरोध। औद्योगिक अनुप्रयोगों के लिए उपयुक्त।',
+    cottonTape: 'कॉटन टेप',
+    cottonTapeDesc: 'इन्सुलेशन और बाइंडिंग के लिए उच्च गुणवत्ता वाली टेप। लचीली, मजबूत और ताप-प्रतिरोधी। वायरिंग और केबल हार्नेस में उपयोग होती है।',
 
     // Section titles
     specialFusesChannels: 'विशेष फ्यूज और चैनल'

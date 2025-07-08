@@ -13,7 +13,7 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ product, index, isVisible }: ProductCardProps) => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [isExpanded, setIsExpanded] = useState(false);
 
   const getProductDescription = (titleKey: string) => {
@@ -37,12 +37,11 @@ const ProductCard = ({ product, index, isVisible }: ProductCardProps) => {
       'allTypesCablesLugs': ['precisionEngineered', 'multiSizeCompatible', 'easyConnection', 'reliableContact', 'industrialStandard'],
       'conductorWire': ['highPurity', 'flexibleStranding', 'temperatureResistant', 'optimalPerformance', 'standardCompliant'],
       'giWire': ['galvanizedCoating', 'rustProof', 'highTensileStrength', 'uniformThickness', 'longLasting'],
-      'robustFuse': t('robustFuseFeatures'),
-      'coreChannel': t('coreChannelFeatures'),
-      'dropOutFuseSet': t('dropOutFuseSetFeatures')
+      'robustFuse': ['robustConstruction', 'highTensileStrength', 'easyInstallation', 'qualityCertified', 'longLasting'],
+      'coreChannel': ['precisionEngineered', 'corrosionResistant', 'easyInstallation', 'customizable', 'industryStandards'],
+      'dropOutFuseSet': ['reliablePerformance', 'easyMaintenance', 'quickDelivery', 'industryStandards', 'isoCertified']
     };
     if (Array.isArray(featureMap[titleKey])) return featureMap[titleKey];
-    if (typeof featureMap[titleKey] === 'string') return t(featureMap[titleKey]).split(',');
     return ['highQualityMaterials', 'industryStandards', 'reliablePerformance', 'quickDelivery', 'technicalSupport'];
   };
 
@@ -59,12 +58,11 @@ const ProductCard = ({ product, index, isVisible }: ProductCardProps) => {
       'allTypesCablesLugs': ['aluminumCopper', 'compressionType', 'boltedDesign', 'multipleRanges', 'contactResistance'],
       'conductorWire': ['strandsConfig', 'conductorSize', 'currentRating', 'voltageGrade', 'flexibilityTest'],
       'giWire': ['zincCoating', 'wireGauge', 'tensileTest', 'uniformCoating', 'astmStandard'],
-      'robustFuse': t('robustFuseSpecs'),
-      'coreChannel': t('coreChannelSpecs'),
-      'dropOutFuseSet': t('dropOutFuseSetSpecs')
+      'robustFuse': ['highVoltageRating', 'mildSteelConstruction', 'paintFinish', 'testPressure', 'customizable'],
+      'coreChannel': ['mildSteelConstruction', 'variousLengths', 'paintFinish', 'testCertificate', 'customSolutions'],
+      'dropOutFuseSet': ['highVoltageRating', 'zincCoating', 'testPressure', 'variousSizes', 'standardCompliant']
     };
     if (Array.isArray(specMap[titleKey])) return specMap[titleKey];
-    if (typeof specMap[titleKey] === 'string') return t(specMap[titleKey]).split(',');
     return ['variousSizes', 'customSolutions', 'wholesaleRetail', 'fastProcessing', 'qualityCertified'];
   };
 
@@ -114,7 +112,6 @@ const ProductCard = ({ product, index, isVisible }: ProductCardProps) => {
         <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300 leading-relaxed">
           {getFormattedProductName(product.titleKey)}
         </h3>
-        
         {/* Always visible basic info */}
         <div className="flex items-center justify-between mb-4">
           <span className="text-xs sm:text-sm text-green-600 font-medium">{t('availableNow')}</span>
